@@ -18,10 +18,8 @@ void Polyndrome(int arg)
 {
     int a = arg / 10000;
     int a1 = arg % 10;
-    int temp = arg / 1000;
-    int b = temp % 10;
-    int temp1 = arg / 10;
-    int b1 = temp1 % 10;
+    int b = arg /1000 % 10;
+    int b1 = arg / 10 % 10;
     // Console.WriteLine(a + ", " + a1 + ", " + b + ", "  + b1 );
     if ( a == a1 & b == b1)
     {
