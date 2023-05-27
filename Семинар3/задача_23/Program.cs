@@ -10,7 +10,7 @@ int Prompt (string message)
     {
     Console.WriteLine("Это не число!");   
     }
-
+    
 return num_n;
 }
 
