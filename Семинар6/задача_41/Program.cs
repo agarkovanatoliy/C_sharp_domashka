@@ -18,10 +18,10 @@ void SumNumber()
     int sum = 0;
     int temp = 0;
     while (sum >= 0)
-    {    
+    {
         // Array.Resize(ref res, res.Length + 1); 
         string number = Prompt("Введите число или нажмите клавишу Q: ");
-        if (number.ToLower() == "q") break;     
+        if (number.ToLower() == "q") break;
         else temp = int.Parse(number);
         if (temp > 0) sum++;
     }
