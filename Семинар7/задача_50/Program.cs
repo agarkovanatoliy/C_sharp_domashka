@@ -49,7 +49,7 @@ int[,] CreateMRandoMatrix(int rows, int colums, int from, int to)
 
 void ArrayItem(int[,] matrix, int arg1, int arg2)
 {
-    if (arg1 > matrix.GetLength(0) || arg2 > matrix.GetLength(1))
+    if (arg1 >= matrix.GetLength(0) || arg2 >= matrix.GetLength(1))
     {
         Console.WriteLine($"Элемента стоящего на позиции [{arg1}, {arg2}] нет!");
     }
@@ -65,6 +65,6 @@ int from = Prompt("Введите начально значение элемен
 int to = Prompt("Введите конечное значение элементов массива: ");
 int[,] matr = CreateMRandoMatrix(row, col, from, to);
 PrintMatrix(matr);
-int line = Prompt("Ведите количество строк массива: ");
-int column = Prompt("Введите количество столбцов массива: ");
+int line = Prompt("Ведите номер строки массива: ");
+int column = Prompt("Введите номер столбца массива: ");
 ArrayItem(matr, line, column);
