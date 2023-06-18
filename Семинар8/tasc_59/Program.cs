@@ -56,7 +56,6 @@ int[] MinElementMatrixPosition(int[,] matrix)
                 min = matrix[i, j];
                 minPositionI = i;
                 minPositionJ = j;
-
             }
         }
     }
